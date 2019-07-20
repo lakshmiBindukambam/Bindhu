@@ -1,0 +1,47 @@
+﻿@model  LoginApplication.Models.login
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+    <div class="container" style="position:fixed;margin:auto; top:50%;left:25%">
+        <div class="row">
+            <div class="col-sm-2">
+                <label> UserId :</label>
+            </div>
+            <div class="col-sm-2">
+                <span> <input type="text" name="LoginId" /></span>
+            </div>
+
+
+        </div>
+        <div class="row" style="margin:5px">
+
+            <div class="col-sm-2">
+                <label> Password :</label>
+            </div>
+            <div class="col-sm-2">
+                <span> <input type="password" name="password" /></span>
+            </div>
+
+        </div>
+        <div class="col-lg-3" style="margin-top:5px">
+            <input type="submit" value="Login" class="btn-success btn" />
+        </div>
+    </div>
+    }
+</body>
+</html>
